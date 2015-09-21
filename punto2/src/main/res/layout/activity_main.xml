@@ -1,11 +1,149 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TableRow>
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Enter a Number 1"
+            android:inputType="numberDecimal"
+        />
+    </TableRow>
 
-</RelativeLayout>
+    <TableRow>
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Enter a Number 2"
+            android:inputType="numberDecimal"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Seleccione una operacion: "
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/gray"
+            />
+
+    </TableRow>
+
+    <TableRow>
+        <RadioGroup
+            android:id="@+id/operaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="60dp">
+
+                <RadioButton
+                    android:id="@+id/sum"
+                    android:text=" + "
+                    android:textColor="@color/darkblue"
+                    android:textSize="35dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <RadioButton
+                    android:id="@+id/rest"
+                    android:text=" - "
+                    android:textColor="@color/darkblue"
+                    android:textSize="35dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="60dp">
+
+            <RadioButton
+                android:id="@+id/mul"
+                android:text=" X "
+                android:textColor="@color/darkblue"
+                android:textSize="35dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:checked="false"/>
+            <RadioButton
+                android:id="@+id/div"
+                android:text=" / "
+                android:textColor="@color/darkblue"
+                android:textSize="35dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:checked="false"/>
+            </LinearLayout>
+
+        </RadioGroup>
+
+    </TableRow>
+
+    <TableRow>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="35dp">
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/calc"
+            android:layout_height="60dp"
+            android:layout_width="360dp"
+            android:layout_gravity="center_vertical"
+            android:text="Calcular"
+            android:textSize="40dp"
+            android:textColor="@color/whitesmoke"
+            android:background="@color/black"
+        />
+
+    </TableRow>
+
+    <TableRow>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="40dp">
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/mess"
+            android:layout_gravity="center"
+            android:text="Resultado: "
+            android:textSize="20dp"
+            android:textColor="@color/cadetblue"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/result"
+            android:layout_gravity="center"
+            android:textSize="70dp"
+            android:hint="0"
+            android:textColor="@color/darkcyan"
+
+            />
+
+    </TableRow>
+
+
+
+
+</TableLayout>
