@@ -28,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int selectedId = opp.getCheckedRadioButtonId();
+                if(numero1.getText().toString().equals("") | numero2.getText().toString().equals("")){
+                    messError.setText("**CAMPO VACIO**");
+                }
+                else{
+                    messError.setText("Resultado: ");
                 double val1=Double.parseDouble(numero1.getText().toString());
                 double val2=Double.parseDouble(numero2.getText().toString());
 
@@ -59,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                         break;
                 }
+            }
             }
         });
     }

@@ -3,37 +3,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/aliceblue"
     tools:context=".MainActivity"
+
     >
 
     <TableRow>
-        <EditText
-            android:id="@+id/num1"
+        <TextView
+            android:layout_height="50dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:hint="Enter a Number 1"
-            android:inputType="numberDecimal"
-        />
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="CALCULADORA"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/darkcyan"
+            android:layout_marginLeft="20dp"
+            />
+
     </TableRow>
 
     <TableRow>
-        <EditText
-            android:id="@+id/num2"
-            android:layout_width="match_parent"
+        <LinearLayout
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:hint="Enter a Number 2"
-            android:inputType="numberDecimal"
-            />
+            android:layout_width="match_parent"
+            >
+
+            <EditText
+                android:id="@+id/num1"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="Operando 1"
+                android:inputType="numberDecimal"
+
+                />
+
+            <EditText
+                android:id="@+id/num2"
+                android:layout_marginLeft="78dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="Operando 2"
+                android:inputType="numberDecimal"
+                />
+
+
+        </LinearLayout>
+
     </TableRow>
 
     <TableRow>
         <TextView
+            android:layout_height="35dp"
             android:text="Seleccione una operacion: "
             android:textSize="20dp"
             android:layout_gravity="center"
-            android:textColor="@color/gray"
+            android:textColor="@color/lightseagreen"
+            android:layout_marginLeft="35dp"
             />
 
     </TableRow>
@@ -42,15 +71,14 @@
         <RadioGroup
             android:id="@+id/operaciones"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <LinearLayout
-                android:layout_width="250dp"
-                android:layout_height="60dp">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            >
 
                 <RadioButton
                     android:id="@+id/sum"
                     android:text=" + "
+                    android:textStyle="bold"
                     android:textColor="@color/darkblue"
                     android:textSize="35dp"
                     android:layout_width="150dp"
@@ -60,35 +88,30 @@
                 <RadioButton
                     android:id="@+id/rest"
                     android:text=" - "
+                    android:textStyle="bold"
                     android:textColor="@color/darkblue"
                     android:textSize="35dp"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:checked="false"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="250dp"
-                android:layout_height="60dp">
-
-            <RadioButton
-                android:id="@+id/mul"
-                android:text=" X "
-                android:textColor="@color/darkblue"
-                android:textSize="35dp"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:checked="false"/>
-            <RadioButton
-                android:id="@+id/div"
-                android:text=" / "
-                android:textColor="@color/darkblue"
-                android:textSize="35dp"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:checked="false"/>
-            </LinearLayout>
-
+                <RadioButton
+                    android:id="@+id/mul"
+                    android:text=" x "
+                    android:textStyle="bold"
+                    android:textColor="@color/darkblue"
+                    android:textSize="35dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+                <RadioButton
+                    android:id="@+id/div"
+                    android:text=" / "
+                    android:textStyle="bold"
+                    android:textColor="@color/darkblue"
+                    android:textSize="35dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
         </RadioGroup>
 
     </TableRow>
@@ -96,18 +119,21 @@
     <TableRow>
         <LinearLayout
             android:layout_width="250dp"
-            android:layout_height="35dp">
+            android:layout_height="30dp">
         </LinearLayout>
     </TableRow>
 
     <TableRow>
         <Button
             android:id="@+id/calc"
+            android:textStyle="bold"
             android:layout_height="60dp"
-            android:layout_width="360dp"
+            android:layout_width="wrap_content"
             android:layout_gravity="center_vertical"
             android:text="Calcular"
             android:textSize="40dp"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
             android:textColor="@color/whitesmoke"
             android:background="@color/black"
         />
@@ -115,35 +141,28 @@
     </TableRow>
 
     <TableRow>
-        <LinearLayout
-            android:layout_width="250dp"
-            android:layout_height="40dp">
-        </LinearLayout>
-    </TableRow>
-
-    <TableRow>
         <TextView
             android:id="@+id/mess"
+            android:textColor="@color/lightseagreen"
             android:layout_gravity="center"
             android:text="Resultado: "
             android:textSize="20dp"
-            android:textColor="@color/cadetblue"
+            android:layout_marginLeft="20dp"
             />
     </TableRow>
 
     <TableRow>
         <TextView
             android:id="@+id/result"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
             android:layout_gravity="center"
             android:textSize="70dp"
             android:hint="0"
             android:textColor="@color/darkcyan"
-
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
             />
 
     </TableRow>
-
-
-
-
 </TableLayout>
