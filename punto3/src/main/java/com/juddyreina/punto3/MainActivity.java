@@ -1,5 +1,6 @@
 package com.juddyreina.punto3;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -30,30 +31,36 @@ public class MainActivity extends AppCompatActivity {
         calcNota.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+            if(quices.getText().toString().equals("") | expos.getText().toString().equals("") | Plab.getText().toString().equals("") | Pfinal.getText().toString().equals("") ){
+                messAviso.setText("CAMPO VACIO");
 
+            }
+            else{
+                messAviso.setText(" ");
                 double valQ = Double.parseDouble(quices.getText().toString());
                 double valE = Double.parseDouble(expos.getText().toString());
                 double valPL = Double.parseDouble(Plab.getText().toString());
                 double valPF = Double.parseDouble(Pfinal.getText().toString());
 
-                if (valQ<=5.0 & valE<=5.0 & valPF<=5.0 & valPL<=5.0 & valQ>=0 & valE>=0 & valPF>=0 & valPL>=0) {
+                if (valQ <= 5.0 & valE <= 5.0 & valPF <= 5.0 & valPL <= 5.0 & valQ >= 0 & valE >= 0 & valPF >= 0 & valPL >= 0) {
                     double resN = valQ * 0.15 + valE * 0.1 + valPL * 0.4 + valPF * 0.35;
                     messResul.setText(String.valueOf(resN));
 
                     if (resN < 3.0) {
+                        messAviso.setTextColor(Color.parseColor("#FF0000"));
                         messAviso.setText("**PERDIO** ");
                     } else {
+                        messAviso.setTextColor(Color.parseColor("#FFFFFF"));
                         messAviso.setText("**GANO** ");
 
                     }
-                }
-                else{
+                } else {
                     messAviso.setText("INVALIDO ");
 
                 }
-
             }
         }
+    }
         );
 
 

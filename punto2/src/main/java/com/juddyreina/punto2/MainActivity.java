@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int selectedId = opp.getCheckedRadioButtonId();
+
                 if(numero1.getText().toString().equals("") | numero2.getText().toString().equals("")){
                     messError.setText("**CAMPO VACIO**");
                 }

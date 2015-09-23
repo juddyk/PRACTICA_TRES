@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="tipos_ident">
+        <item>NN</item>
+        <item>CC: </item>
+        <item>TI: </item>
+        <item>CE: </item>
+    </string-array>
+
+</resources>

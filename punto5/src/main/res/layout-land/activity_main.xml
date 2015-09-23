@@ -24,9 +24,9 @@
                 android:layout_height="match_parent"
                 android:text="REGISTRO"
                 android:textStyle="bold"
-                android:textSize="50dp"
+                android:textSize="80dp"
                 android:textColor="@color/lightblue"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="100dp"
                 android:layout_marginRight="50dp"
                 />
         </TableRow>
@@ -43,7 +43,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nombre: "
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="100dp"
                     android:textStyle="bold"
                     android:textSize="19dp"
                     android:textColor="@color/aliceblue"
@@ -78,7 +78,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Apellido: "
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="100dp"
                     android:textStyle="bold"
                     android:textSize="19dp"
                     android:textColor="@color/aliceblue"
@@ -108,7 +108,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:layout_marginLeft="30dp">
+                android:layout_marginLeft="100dp">
 
                 <Spinner
                     android:id="@+id/spin_td"
@@ -146,6 +146,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:layout_marginLeft="100dp"
                 >
                 <TextView
                     android:layout_width="wrap_content"
@@ -197,7 +198,7 @@
                 android:textColor="@color/azure"
                 android:textSize="19dp"
                 android:textStyle="bold|normal"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="100dp"
                 />
         </TableRow>
 
@@ -214,6 +215,8 @@
                 android:calendarViewShown="false"
                 android:datePickerMode="spinner"
                 android:calendarTextColor="@color/whitesmoke"
+                android:backgroundTint="@color/azure"
+                android:foregroundTint="@color/salmon"
                 android:endYear="2015"
                 />
 
@@ -228,7 +231,7 @@
                 android:textColor="@color/azure"
                 android:textSize="19dp"
                 android:textStyle="bold|normal"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="100dp"
                 />
 
 
@@ -245,6 +248,7 @@
                 android:entries="@array/nom_ciudades"
                 android:scrollbarSize="30dp"
                 android:spinnerMode="dialog"
+                android:layout_marginLeft="100dp"
                 >
             </Spinner>
         </TableRow>
@@ -258,7 +262,7 @@
                 android:textColor="@color/azure"
                 android:textSize="19dp"
                 android:textStyle="bold|normal"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="100dp"
                 />
         </TableRow>
 
@@ -270,6 +274,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
+                android:layout_marginLeft="100dp"
                 >
 
                 <CheckBox
@@ -307,6 +312,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
+                android:layout_marginLeft="100dp"
                 >
 
                 <CheckBox
@@ -332,6 +338,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
+                android:layout_marginLeft="100dp"
                 >
 
                 <CheckBox
@@ -356,6 +363,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
+                android:layout_marginLeft="100dp"
                 >
 
                 <CheckBox
@@ -405,6 +413,7 @@
                android:textColor="@color/azure"
                android:textSize="25dp"
                android:textStyle="bold"
+               android:layout_marginLeft="150dp"
                />
 
        </TableRow>
@@ -419,6 +428,7 @@
                 android:layout_width="wrap_content"
                 android:orientation="horizontal"
                 android:visibility="invisible"
+                android:layout_marginLeft="70dp"
                 >
 
                 <TextView
@@ -428,7 +438,6 @@
                     android:layout_marginLeft="30dp"
                     android:textColor="@color/azure"
                     android:textSize="25dp"
-
                     />
 
             </LinearLayout>
@@ -445,6 +454,7 @@
                 android:layout_width="wrap_content"
                 android:orientation="horizontal"
                 android:visibility="invisible"
+                android:layout_marginLeft="70dp"
                 >
 
                 <TextView
@@ -471,6 +481,7 @@
                 android:layout_width="wrap_content"
                 android:orientation="horizontal"
                 android:visibility="invisible"
+                android:layout_marginLeft="70dp"
                 >
 
                 <TextView
@@ -508,6 +519,7 @@
                 android:layout_width="wrap_content"
                 android:orientation="horizontal"
                 android:visibility="invisible"
+                android:layout_marginLeft="70dp"
                 >
 
                 <TextView
@@ -533,6 +545,7 @@
                 android:layout_width="wrap_content"
                 android:orientation="vertical"
                 android:visibility="invisible"
+                android:layout_marginLeft="70dp"
                 >
 
                 <TextView
@@ -541,7 +554,7 @@
                     android:layout_marginLeft="30dp"
                     android:textColor="@color/salmon"
                     android:textSize="19dp"
-                    android:text="Edad, Fecha y lugar de nacimiento:"
+                    android:text="Eda, Fecha y lugar de nacimiento:"
                     />
                 <TextView
                     android:id="@+id/show_data1"
@@ -575,6 +588,7 @@
                 android:layout_width="wrap_content"
                 android:orientation="horizontal"
                 android:visibility="invisible"
+                android:layout_marginLeft="70dp"
                 >
 
                 <TextView

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="nom_ciudades">
+        <item>(Vacio)</item>
+        <item>Amazonas (Leticia)</item>
+        <item>Antioquia (Medellín)</item>
+        <item>Arauca (Arauca)</item>
+        <item>Atlántico (Barranquilla)</item>
+        <item>Bolívar (Cartagena)</item>
+        <item>Boyacá (Tunja)</item>
+        <item>Caldas (Manizales)</item>
+        <item>Caquetá (Florencia)</item>
+        <item>Casanate (Yopal)</item>
+        <item>Cauca (Popayán)</item>
+        <item>Cesar (Valledupar)</item>
+        <item>Chocó (Quibdó)</item>
+        <item>Córdoba (Montería)</item>
+        <item>Cundinamarca (Bogotá)</item>
+        <item>Guanía (Inírida)</item>
+        <item>Guajira (Riohacha)</item>
+        <item>Guaviare (San José del Guaviare)</item>
+        <item>Huila (Neiva)</item>
+        <item>Magdalena (Santa Marta)</item>
+        <item>Meta (villavicencio)</item>
+        <item>Nariño (Pasto)</item>
+        <item>Norte de Santander (Cúcuta)</item>
+        <item>Putumayo (Mocoa)</item>
+        <item>Quindío (Armenia)</item>
+        <item>Risaralda (Pereira)</item>
+        <item>San Andrés Islas (Providencia)</item>
+        <item>Santander (Bucaramanga)</item>
+        <item>Sucre (Sincelejo)</item>
+        <item>Tolima (Ibagué)</item>
+        <item>Valle del Cauca (Cali)</item>
+        <item>Vaupés (Mitú)</item>
+        <item>Vichada (Puerto Carreño)</item>
+
+    </string-array>
+
+</resources>

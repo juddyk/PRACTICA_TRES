@@ -164,6 +164,7 @@
                 android:layout_gravity="center"
                 android:textSize="70dp"
                 android:hint="0"
+                android:maxWidth="150dp"
                 android:textColor="@color/darkcyan"
                 android:layout_marginLeft="50dp"
                 android:textStyle="bold"
