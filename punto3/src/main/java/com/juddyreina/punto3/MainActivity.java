@@ -58,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
                     messAviso.setText("INVALIDO ");
 
                 }
+                quices.setText("");
+                expos.setText("");
+                Plab.setText("");
+                Pfinal.setText("");
             }
         }
     }

@@ -65,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
                         }
                         break;
                 }
+                    numero1.setText("");
+                    numero2.setText("");
+                    opp.clearCheck();
             }
             }
         });

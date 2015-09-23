@@ -129,8 +129,14 @@ public class MainActivity extends AppCompatActivity {
                     fila4.setVisibility(View.VISIBLE);
                     fila5.setVisibility(View.VISIBLE);
                     fila6.setVisibility(View.VISIBLE);
-                }
 
+                    nombre.setText("");
+                    apellido.setText("");
+                    documento.setText("");
+                    typeDoc.setSelection(0);
+                    city.setSelection(0);
+                    sex.clearCheck();
+                }
             }
         });
 

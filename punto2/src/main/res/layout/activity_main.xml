@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:hint="Operando 1"
-                android:inputType="numberDecimal"
+                android:inputType="numberDecimal|numberSigned"
 
                 />
 
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:hint="Operando 2"
-                android:inputType="numberDecimal"
+                android:inputType="numberDecimal|numberSigned"
                 />
 
 
